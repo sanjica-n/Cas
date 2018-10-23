@@ -20,6 +20,6 @@ public class Automobil {
 	}
 	
 	public String informacijeOAutomobilu() {
-	return "Marka : "+marka+"tip"+tip+"broj putnika"+brojPutnika+"boja je"+boja+"cena: "+cena;
+	return "Marka : "+marka+"tip"+tip+"broj putnika"+brojPutnika+"boja je "+boja+"cena: "+cena;
 	}	 
 }
