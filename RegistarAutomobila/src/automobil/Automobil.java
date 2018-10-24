@@ -7,10 +7,11 @@ public class Automobil {
 	private String boja;
 	private Double cena;
 	private Motor motorAutomobila;
+	private Tocak tocakAutomobila;
 	
 
 
-	public Automobil(String marka, String tip, Integer brojPutnika, String boja, Double cena, Motor motorAutomobila) {
+	public Automobil(String marka, String tip, Integer brojPutnika, String boja, Double cena, Motor motorAutomobila, Tocak tocakAutomobila) {
 		super();
 		this.marka = marka;
 		this.tip = tip;
@@ -18,11 +19,12 @@ public class Automobil {
 		this.boja = boja;
 		this.cena = cena;
 		this.motorAutomobila = motorAutomobila;
+		this.tocakAutomobila = tocakAutomobila;
 	
 	}
 	
 	public String informacijeOAutomobilu() {
-	return "Marka : "+marka+"tip"+tip+"broj putnika"+brojPutnika+"boja je "+boja+"cena: "+cena+"motor"+motorAutomobila.informacijeOMotoru();
+	return "Marka : "+marka+"tip"+tip+"broj putnika"+brojPutnika+"boja je "+boja+"cena: "+cena+"motor"+motorAutomobila.informacijeOMotoru()+"tocak"+tocakAutomobila.informacijeOTocku();
 	}
 
 	public Motor getMotorAutomobila() {
@@ -31,5 +33,17 @@ public class Automobil {
 
 	public void setMotorAutomobila(Motor motorAutomobila) {
 		this.motorAutomobila = motorAutomobila;
+	}
+
+	public Tocak getTocakAutomobila() {
+		return tocakAutomobila;
+	}
+
+	public void setTocakAutomobila(Tocak tocakAutomobila) {
+		this.tocakAutomobila = tocakAutomobila;
+	}
+
+	
+		
 	}	 
-}
+
