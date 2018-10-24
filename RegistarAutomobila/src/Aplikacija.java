@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import automobil.Automobil;
 import automobil.Motor;
+import automobil.TipFelne;
+import automobil.TipGume;
 import automobil.Tocak;
 
 public class Aplikacija {
@@ -13,7 +15,7 @@ public class Aplikacija {
 		
 		List<Automobil> listaAutomobila = new ArrayList<>();
 		Motor benzinac16 = new Motor(1600, 120,"benzin");
-		Tocak putnicka = new Tocak(17, 12, "zimske", "aliminijumska", "160h");
+		Tocak putnicka = new Tocak(17, 12, TipGume.ZIMSKE, TipFelne.ALUMINIJUMSKA, "160h");
 		
       Automobil ford = new Automobil("Ford", "Fini", 5, "Crna", 100d, benzinac16, putnicka);
       
@@ -41,9 +43,6 @@ public class Aplikacija {
 		System.out.println("Uspesno ste dodali automobil " + unetiAutomobil.informacijeOAutomobilu());
        listaAutomobila.add(unetiAutomobil);
        
-      
-       
-      
       
     //Koristimo for petlju kako bismo prikazali sve automobile iz liste
     		System.out.println("***Vozila na lageru: / Lista vozila:***");
