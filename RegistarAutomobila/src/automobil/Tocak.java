@@ -7,6 +7,8 @@ public class Tocak {
     private TipFelne tipFelne;
     private String dozvoljenaBrzinaGume;
     
+
+
 	public Tocak(Integer sirina, Integer precnik, TipGume tipGume, TipFelne tipFelne, String dozvoljenaBrzinaGume) {
 		super();
 		this.sirina = sirina;

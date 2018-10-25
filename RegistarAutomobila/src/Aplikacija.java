@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import automobil.Automobil;
+import automobil.Citac;
 import automobil.Motor;
 import automobil.TipFelne;
 import automobil.TipGume;
@@ -16,7 +17,7 @@ public class Aplikacija {
 		List<Automobil> listaAutomobila = new ArrayList<>();
 		Motor benzinac16 = new Motor(1600, 120,"benzin");
 		Tocak putnicka = new Tocak(17, 12, TipGume.ZIMSKE, TipFelne.ALUMINIJUMSKA, "160h");
-		
+	
       Automobil ford = new Automobil("Ford", "Fini", 5, "Crna", 100d, benzinac16, putnicka);
       
       
@@ -40,7 +41,9 @@ public class Aplikacija {
       
       Automobil unetiAutomobil = new Automobil(marka, tip, brojPutnika, boja, cena, benzinac16, putnicka);
       unetiAutomobil.setMotorAutomobila(benzinac16);
-		System.out.println("Uspesno ste dodali automobil " + unetiAutomobil.informacijeOAutomobilu());
+      Tocak unetiTocak = Citac.unesiTocak();
+      unetiAutomobil.setTocakAutomobila(unetiTocak);
+	  System.out.println("Uspesno ste dodali automobil " + unetiAutomobil.informacijeOAutomobilu());
        listaAutomobila.add(unetiAutomobil);
        
       
