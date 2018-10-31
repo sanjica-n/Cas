@@ -14,7 +14,7 @@ public class TeretnoVozilo extends MotornoVozilo {
 		this.cena = cena;
 	}
 
-	public double getCena() {
+	public Double getCena() {
 		return cena;
 	}
 
@@ -26,7 +26,7 @@ public class TeretnoVozilo extends MotornoVozilo {
 	public void stampajInformacije() {
 		// TODO Auto-generated method stub
 		super.stampajInformacije();
-		System.out.println(" Nosivost " + getNosivost() + " Zapremia " + getZapremina());
+		System.out.println(" Nosivost " + getNosivost() + " Zapremia " + getZapremina() + " Cena " + prodajnaCena());
 	}
 	public Integer getNosivost() {
 		return nosivost;
@@ -47,7 +47,7 @@ public class TeretnoVozilo extends MotornoVozilo {
 	@Override
 	public Double prodajnaCena() {
 		// TODO Auto-generated method stub
-		return null;
+		return getCena();
 	}
 	
 

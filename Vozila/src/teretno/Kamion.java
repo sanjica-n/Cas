@@ -20,7 +20,7 @@ public class Kamion extends TeretnoVozilo {
 	@Override
 	public Double prodajnaCena() {
 		// TODO Auto-generated method stub
-		return null;
+		return super.prodajnaCena() * 1.2;
 	}
 
 

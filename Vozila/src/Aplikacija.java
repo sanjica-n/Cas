@@ -12,13 +12,13 @@ public class Aplikacija {
 		MotornoVozilo punto = new PutnickoVozilo(" Fiat ", 4, false, 3, 100d);
 		punto.stampajInformacije();
        
-		MotornoVozilo fap = new TeretnoVozilo(null, 500, 30, null, 80d);
+		MotornoVozilo fap = new TeretnoVozilo(null, 500, 30, null, 100d );
 		fap.stampajInformacije();
 		
-		MotornoVozilo ikarbus = new Autobus("Ikar", 5, false, 5, true, 100, 88d);
+		MotornoVozilo ikarbus = new Autobus("Ikar", 5, false, 5,  true, 5,  100d );
 		ikarbus.stampajInformacije();
 		
-		MotornoVozilo kam = new Kamion("Drfs", 10, 400, 40, 80d);
+		MotornoVozilo kam = new Kamion("Drfs", 10, 400, 40, 100d);
 		kam.stampajInformacije();
 	}
 

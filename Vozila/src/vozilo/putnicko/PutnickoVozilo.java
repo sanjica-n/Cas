@@ -7,9 +7,9 @@ public class PutnickoVozilo extends MotornoVozilo{
 
 	private Boolean kabriolet;
 	private Integer brojVrata;
-	private double cena;
+	private Double cena;
 	
-	public PutnickoVozilo(String marka, Integer brojPutnika, Boolean kabriolet, Integer brojVrata, double cena) {
+	public PutnickoVozilo(String marka, Integer brojPutnika, Boolean kabriolet, Integer brojVrata, Double cena) {
 		super(marka, brojPutnika, cena);
 		this.kabriolet = kabriolet;
 		this.brojVrata = brojVrata;
@@ -20,7 +20,7 @@ public class PutnickoVozilo extends MotornoVozilo{
 public void stampajInformacije() {
 	// TODO Auto-generated method stub
 	super.stampajInformacije();
-	System.out.println(" Tip Vozila je putnicko, kabriolet " + Formateri.format(getKabriolet()) + " broj vrata " + getBrojVrata());
+	System.out.println(" Tip Vozila je putnicko, kabriolet " + Formateri.format(getKabriolet()) + " broj vrata " + getBrojVrata() + " Cena " + prodajnaCena());
 }
 
 	public Boolean getKabriolet() {

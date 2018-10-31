@@ -5,10 +5,10 @@ public class Autobus extends PutnickoVozilo {
 	
 	private Boolean zglobni;
 	private Integer brojStajacihMesta;
-    private double cena;
+    private Double cena;
 	
 	public Autobus(String marka, Integer brojPutnika, Boolean kabriolet, Integer brojVrata, Boolean zglobni,
-			Integer brojStajacihMesta, double cena) {
+			Integer brojStajacihMesta, Double cena) {
 		super(marka, brojPutnika, kabriolet, brojVrata, cena);
 		this.zglobni = zglobni;
 		this.brojStajacihMesta = brojStajacihMesta;
@@ -27,7 +27,7 @@ public double getCena() {
 public void stampajInformacije() {
 	// TODO Auto-generated method stub
 	super.stampajInformacije();
-	System.out.println(" Zglobni " +getZglobni() + " Broj Stajacih Mesta: " +getBrojStajacihMesta());
+	System.out.println(" Zglobni " +getZglobni() + " Broj Stajacih Mesta: " +getBrojStajacihMesta() + " Cena " + prodajnaCena());
 }
 	public Boolean getZglobni() {
 		return zglobni;

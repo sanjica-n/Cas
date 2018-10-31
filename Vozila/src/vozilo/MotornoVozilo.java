@@ -3,10 +3,10 @@ package vozilo;
 public abstract class MotornoVozilo {
 	 private String marka;
 	 private Integer brojPutnika;
-	 private double cena;
+	 private Double cena;
 	 
 
-	public MotornoVozilo(String marka, Integer brojPutnika, double cena) {
+	public MotornoVozilo(String marka, Integer brojPutnika, Double cena) {
 		super();
 		this.marka = marka;
 		this.brojPutnika = brojPutnika;
@@ -15,7 +15,7 @@ public abstract class MotornoVozilo {
 	public abstract Double prodajnaCena();
 	
 	public void stampajInformacije() {
-		System.out.println("Marka vozila je" + getMarka()+ ", broj putnika je" + getBrojPutnika() + " Cena " +getCena());
+		System.out.println("Marka vozila je" + getMarka()+ ", broj putnika je" + getBrojPutnika() + " Cena " + prodajnaCena());
 	}
 	public String getMarka() {
 		return marka;
@@ -29,7 +29,7 @@ public abstract class MotornoVozilo {
 	public void setBrojPutnika(Integer brojPutnika) {
 		this.brojPutnika = brojPutnika;
 	}
-	public double getCena() {
+	public Double getCena() {
 		return cena;
 	}
 	public void setCena(double cena) {
